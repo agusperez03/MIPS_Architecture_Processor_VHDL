@@ -1,0 +1,26 @@
+<mxfile host="Electron" modified="2023-06-09T21:53:07.554Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.8 Chrome/112.0.5615.165 Electron/24.2.0 Safari/537.36" etag="0CNkHGHvDRD7rusDxvW8" version="21.2.8" type="device">
+  <diagram name="Página-1" id="976ksHXdWYSij9KBlSpp">
+    <mxGraphModel dx="1114" dy="704" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="MI3vTnZKfxx9PkZqP91Z-2" value="Registers" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="414" y="270" width="150" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="MI3vTnZKfxx9PkZqP91Z-3" value="Data Memory" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="660" y="310" width="150" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="MI3vTnZKfxx9PkZqP91Z-4" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.logic_gates.logic_gate;operation=and;" vertex="1" parent="1">
+          <mxGeometry x="660" y="120" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MI3vTnZKfxx9PkZqP91Z-6" value="IF" parent="0" />
+        <mxCell id="MI3vTnZKfxx9PkZqP91Z-7" value="Instruction Memory" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="MI3vTnZKfxx9PkZqP91Z-6">
+          <mxGeometry x="160" y="200" width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="MI3vTnZKfxx9PkZqP91Z-8" value="PC" style="whiteSpace=wrap;html=1;" vertex="1" parent="MI3vTnZKfxx9PkZqP91Z-6">
+          <mxGeometry x="40" y="200" width="40" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
