@@ -15,7 +15,7 @@ USE ieee.numeric_std.ALL;
 
 entity memory is
     generic(
-        C_ELF_FILENAME    : string := "programa";
+        C_ELF_FILENAME    : string ;
         C_MEM_SIZE        : integer := 1024
 	 );
     Port ( Addr : in std_logic_vector(31 downto 0);

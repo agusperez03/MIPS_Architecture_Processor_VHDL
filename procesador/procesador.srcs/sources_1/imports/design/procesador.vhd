@@ -402,14 +402,14 @@ pc_src <= EX_zero_ALU and EX_Branch;
 			WB_MemtoReg <= EX_MemtoReg;
             WB_RegWrite <= EX_RegWrite;
 			WB_result_data_memory <= D_DataIn;
-			WB_read_data_2 <= EX_read_data_2;
+			WB_read_data_2 <= EX_result_ALU;
 			WB_write_register <= EX_mux_instruction;
 		end if;
 	end process;
 
 -- Etapa WB
 
-WB_write_data <= WB_result_data_memory when (WB_MemtoReg = '0') else WB_read_data_2;
+WB_write_data <= WB_result_data_memory when (WB_MemtoReg = '1') else WB_read_data_2;
 
 
 

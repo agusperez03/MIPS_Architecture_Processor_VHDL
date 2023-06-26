@@ -64,6 +64,21 @@ architecture processor_tb_arq  of processor_tb is
 	);
    end component;
 
+    component memory_data
+	generic (
+	   C_ELF_FILENAME     : string;
+      C_MEM_SIZE         : integer
+   );
+	port (
+		Clk                : in std_logic;			 
+		Addr               : in std_logic_vector(31 downto 0);
+		RdStb              : in std_logic;
+		WrStb              : in std_logic;
+		DataIn             : in std_logic_vector(31 downto 0);
+		DataOut            : out std_logic_vector(31 downto 0)
+	);
+   end component;
+
 	signal Clk         : std_logic;
 	signal Reset       : std_logic;
    -- Instruction memory
@@ -117,7 +132,7 @@ begin
 		DataOut            => I_DataIn
 	);
 	
-	Data_Mem_inst : memory
+	Data_Mem_inst : memory_data
 	generic map (
 	   C_ELF_FILENAME     => "data",
      C_MEM_SIZE         => 1024
